@@ -52,9 +52,7 @@ function Projects() {
               <h2>Wind in Your Back</h2>
 
               <p>
-                A game created during the Juniper Dev GameJam,
-                focusing on enemy logic, player bounce mechanics,
-                and narrative design.
+                A game created during The Very Serious Juniper Dev Game Jam. Hosted by Juniper Dev.
               </p>
 
               <div className="project-tags">
@@ -88,12 +86,12 @@ function Projects() {
               <h2>Tickle Time</h2>
 
               <p>
-                A game created during Game Jam 2024, where I worked
-                on item logic, item art, and level design.
+                A game created during the Global Game Jam 2024. The theme was "Make me laugh". 
               </p>
 
               <div className="project-tags">
                 <span>Unity</span>
+                <span>C#</span>
               </div>
 
               <Link

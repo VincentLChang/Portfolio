@@ -1,10 +1,14 @@
 /* Projects */
+main {
+  padding-top: 8rem;
+}
 
 .projects-page {
   padding: 8% 6%;
 }
 
 .projects-header {
+  padding-top: 4rem;
   max-width: 700px;
   margin: 0 auto 5rem auto;
   text-align: center;
@@ -222,4 +226,65 @@
   height: 100%;
   object-fit: contain;
   display: block;
+}
+
+.navbar {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  width: min(90%, 1100px);
+  padding: 0.7rem 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  background: rgba(16, 19, 24, 0.9);
+  border: 1px solid #2a2f37;
+  border-radius: 999px;
+
+  backdrop-filter: blur(12px);
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.navbar nav a {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  color: #a7adb7;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+.navbar nav a:hover {
+  color: #ffffff;
+  background: #1c2129;
+}
+
+.cv-button {
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #101318;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.cv-button:hover {
+  transform: translateY(-1px);
 }
