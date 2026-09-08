@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import windInYourBackGIF from '../assets/wind-in-your-back.gif'
 
 function WindInYourBack() {
   return (
@@ -44,9 +45,11 @@ function WindInYourBack() {
 
         <section className="project-showcase">
           <div className="project-placeholder">
-            Wind in Your Back
             <br />
-            Gameplay / Screenshot
+            <img
+              src={windInYourBackGIF}
+              alt="Wind in Your Back gameplay"
+            />
           </div>
         </section>
 

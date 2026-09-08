@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import windInYourBackImage from '../assets/wind-in-your-back.png'
+import tickleTimeImage from '../assets/tickle-time.png'
 
 function Projects() {
   return (
@@ -36,8 +38,11 @@ function Projects() {
 
           <article className="project-card">
             <div className="project-image">
-              <span>Wind in Your Back</span>
-            </div>
+                <img
+                src={windInYourBackImage}
+                alt="Wind in Your Back gameplay"
+                />
+        </div>
 
             <div className="project-info">
               <p className="project-meta">
@@ -69,7 +74,10 @@ function Projects() {
 
           <article className="project-card">
             <div className="project-image">
-              <span>Tickle Time</span>
+              <img
+                src={tickleTimeImage}
+                alt="Tickle Time gameplay"
+              />
             </div>
 
             <div className="project-info">

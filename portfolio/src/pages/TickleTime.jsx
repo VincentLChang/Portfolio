@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import tickleTimeImage from '../assets/tickle-time-gameplay.png'
 
 function TickleTime() {
   return (
@@ -35,9 +36,11 @@ function TickleTime() {
 
         <section className="project-showcase">
           <div className="project-placeholder">
-            Tickle Time
             <br />
-            Gameplay / Screenshot
+            <img
+              src={tickleTimeImage}
+              alt="Tickle Time gameplay"
+            />
           </div>
         </section>
 
