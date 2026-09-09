@@ -110,6 +110,20 @@ function WindInYourBack() {
 
         </section>
 
+        <section className="project-links">
+          <p className="hero-label">PLAY WIND IN YOUR BACK</p>
+            <span>
+              <a
+                href="https://wubdev.itch.io/wind-in-your-back"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-button"
+              >
+                Wind in Your Back on itch.io
+              </a>
+            </span>
+        </section>
+
 
         <Link to="/projects" className="back-link">
           ← Back to Projects

@@ -24,13 +24,13 @@ function TickleTime() {
 
       <main className="project-page">
         <section className="project-hero">
-          <p className="hero-label">GAME JAM 2024</p>
+          <p className="hero-label"> GLOBAL GAME JAM 2024</p>
 
           <h1>Tickle Time</h1>
 
           <p className="project-intro">
-            A game created during Game Jam 2024, where I worked
-            on item logic, item art, and level design.
+            A game created during Global Game Jam 2024, where I worked
+            on item logic, 2D art, game concept and level design.
           </p>
         </section>
 
@@ -50,8 +50,11 @@ function TickleTime() {
             <h2>About the Game</h2>
 
             <p>
-              Describe what Tickle Time is about and what the player
-              needs to accomplish.
+              Tickle Time is a game created during Global Game Jam 2024.
+              The game is a multiplayer game where the there are two players; a tickler and a hider.
+              The tickler has to find the hider and the hider has to avoid the tickler.
+              Each level is procedurally generated with multiple kinds of rooms and items that can be used to help the hider avoid the tickler.
+              It is a fun and somewhat scary game which can be played with a friend or solo. The game was created in Unity and C#.
             </p>
           </div>
 
@@ -61,7 +64,8 @@ function TickleTime() {
 
             <ul>
               <li>Item logic</li>
-              <li>Item art</li>
+              <li>2D art</li>
+              <li>Game concept</li>
               <li>Level design</li>
             </ul>
           </div>
@@ -74,7 +78,23 @@ function TickleTime() {
 
           <div className="project-tags">
             <span>Unity</span>
+            <span>C#</span>
+            <span>Git</span>
           </div>
+        </section>
+
+        <section className="project-links">
+          <p className="hero-label">PLAY TICKLE TIME</p>
+            <span>
+              <a
+                href="YOUR_ITCH_LINK"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-button"
+              >
+                Tickle Time on itch.io
+              </a>
+            </span>
         </section>
 
         <Link to="/projects" className="back-link">
