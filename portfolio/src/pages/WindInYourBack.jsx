@@ -22,8 +22,8 @@ function WindInYourBack() {
 
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/projects">Projects</Link>
           <a href="/#about">About</a>
+          <Link to="/projects">Projects</Link>
           <a href="/#skills">Skills</a>
           <a href="/#contact">Contact</a>
         </nav>
