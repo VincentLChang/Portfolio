@@ -1,5 +1,16 @@
 import { Link } from 'react-router-dom'
-import windInYourBackGIF from '../assets/wind-in-your-back.gif'
+
+import windInYourBackImage from '../assets/Wind-In-Your-Back/wind-in-your-back.png'
+import windInYourBackGameplay from '../assets/Wind-In-Your-Back/wind-in-your-back-game.png'
+import windInYourBackGIF from '../assets/Wind-In-Your-Back/wind-in-your-back.gif'
+
+import ImageSlider from '../components/ImageSlider'
+
+const windInYourBackImages = [
+  windInYourBackImage,
+  windInYourBackGameplay,
+  windInYourBackGIF,
+]
 
 function WindInYourBack() {
   return (
@@ -42,17 +53,9 @@ function WindInYourBack() {
           </p>
         </section>
 
-
         <section className="project-showcase">
-          <div className="project-placeholder">
-            <br />
-            <img
-              src={windInYourBackGIF}
-              alt="Wind in Your Back gameplay"
-            />
-          </div>
+          <ImageSlider images={windInYourBackImages} />
         </section>
-
 
         <section className="project-details">
 
@@ -62,12 +65,26 @@ function WindInYourBack() {
             <h2>About the Game</h2>
 
             <p>
-              Describe the game here. Explain what the player does,
-              what the objective is, and what makes the experience
-              interesting.
+              Wind in Your Back is a game created during the Juniper
+              Dev GameJam 2026. The game is a fast-paced 3D platformer
+              where the player must navigate through the levels as
+              quickly as possible.
+            </p>
+
+            <p>
+              The player is a faulty wind-up toy which the factory is
+              trying to destroy, forcing you to escape. The player must
+              use their winding key to move forward while avoiding
+              obstacles and enemies.
+            </p>
+
+            <p>
+              The project was created in Unity with C# and was
+              completed in a week. The game was ranked 15th out of
+              3,503 submissions, which was a great achievement for a
+              game jam project.
             </p>
           </div>
-
 
           <div>
             <p className="hero-label">MY CONTRIBUTIONS</p>
@@ -75,14 +92,19 @@ function WindInYourBack() {
             <h2>What I Worked On</h2>
 
             <ul>
-              <li>Enemy logic</li>
-              <li>Player bounce mechanics</li>
               <li>Narrative design</li>
+              <li>Game design</li>
+              <li>Story writing</li>
+              <li>Sound design</li>
+              <li>UI</li>
+              <li>Enemy logic</li>
+              <li>Player charge effects</li>
+              <li>Player bounce mechanics</li>
+              <li>Bug fixing</li>
             </ul>
           </div>
 
         </section>
-
 
         <section className="technical-section">
 
@@ -97,7 +119,6 @@ function WindInYourBack() {
 
         </section>
 
-
         <section className="technical-section">
 
           <p className="hero-label">RESULT</p>
@@ -105,25 +126,27 @@ function WindInYourBack() {
           <h2>Juniper Dev GameJam 2026</h2>
 
           <p className="project-rank">
-            🏆 Rank #15
+            🏆 Overall Rank #15 · Score 4.34
           </p>
 
         </section>
 
         <section className="project-links">
-          <p className="hero-label">PLAY WIND IN YOUR BACK</p>
-            <span>
-              <a
-                href="https://wubdev.itch.io/wind-in-your-back"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-button"
-              >
-                Wind in Your Back on itch.io
-              </a>
-            </span>
-        </section>
 
+          <p className="hero-label">
+            PLAY WIND IN YOUR BACK
+          </p>
+
+          <a
+            href="https://wubdev.itch.io/wind-in-your-back"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-button"
+          >
+            Wind in Your Back on itch.io
+          </a>
+
+        </section>
 
         <Link to="/projects" className="back-link">
           ← Back to Projects

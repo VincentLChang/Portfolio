@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import windInYourBackImage from '../assets/wind-in-your-back.png'
-import tickleTimeImage from '../assets/tickle-time.png'
+import windInYourBackImage from '../assets/Wind-In-Your-Back/wind-in-your-back.png'
+import tickleTimeImage from '../assets/Tickle-Time/tickle-time.png'
 
 function Projects() {
   return (
@@ -11,7 +11,7 @@ function Projects() {
         </Link>
 
         <nav>
-          <Link to="/">Home</Link>
+          <Link to="/">Home</Link>  
           <a href="/#about">About</a>
           <Link to="/projects">Projects</Link>
           <a href="/#skills">Skills</a>
