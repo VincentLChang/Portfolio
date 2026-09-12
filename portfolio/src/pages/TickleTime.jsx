@@ -22,7 +22,7 @@ function TickleTime() {
           <Link to="/">Home</Link>
           <a href="/#about">About</a>
           <Link to="/projects">Projects</Link>
-          <a href="/#skills">Skills</a>
+          <Link to="/skills">Skills</Link>
           <a href="/#contact">Contact</a>
         </nav>
 

@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import WindInYourBack from './pages/WindInYourBack'
 import TickleTime from './pages/TickleTime.jsx'
+import Skills from './pages/Skills'
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Route
           path="/projects/tickle-time"
           element={<TickleTime />}
+        />
+        <Route
+          path="/skills"
+          element={<Skills />}
         />
       </Routes>
     </BrowserRouter>

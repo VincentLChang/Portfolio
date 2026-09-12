@@ -574,6 +574,154 @@ main {
 
 /* #endregion */
 
+/* #region Skills Overview */
+
+.skills-page {
+  padding: 8% 6%;
+}
+
+.skills-header {
+  padding-top: 4rem;
+
+  max-width: 700px;
+  margin: 0 auto 5rem;
+
+  text-align: center;
+}
+
+.skills-header h1 {
+  color: var(--text);
+
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1;
+
+  margin-bottom: 1.5rem;
+}
+
+.skills-header > p:last-child {
+  color: var(--text-secondary);
+
+  font-size: 1.2rem;
+}
+
+/* #endregion */
+
+/* #region Skill Cards */
+
+.skills-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 2rem;
+}
+
+.skill-card {
+  border: 1px solid var(--border);
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.1);
+}
+
+.skill-info {
+  padding: 2rem;
+}
+
+.skill-meta {
+  color: var(--blue);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  margin-bottom: 1rem;
+}
+
+.skill-info h2 {
+  color: var(--text);
+
+  font-size: 2rem;
+
+  margin-bottom: 1rem;
+}
+
+.skill-info > p:not(.skill-meta) {
+  color: var(--text-secondary);
+
+  line-height: 1.7;
+}
+
+.skill-tags {
+  display: flex;
+
+  justify-content: flex-start;
+
+  flex-wrap: wrap;
+
+  gap: 0.6rem;
+
+  margin-top: 2rem;
+}
+
+.skill-tags span {
+  padding: 0.5rem 0.9rem;
+
+  border: 1px solid #bfdbfe;
+
+  background: var(--blue-light);
+
+  color: var(--blue-dark);
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+}
+
+/* #endregion */
+
+/* #region Skills Mobile */
+
+@media (max-width: 768px) {
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-page {
+    padding: 8% 5%;
+  }
+
+  .skills-header {
+    margin-bottom: 4rem;
+  }
+
+  .skill-info {
+    padding: 1.5rem;
+  }
+
+  .skill-info h2 {
+    font-size: 1.7rem;
+  }
+
+}
+
+/* #endregion */
+
 /* #region Tablet */
 
 @media (max-width: 1100px) {
