@@ -1,7 +1,4 @@
-/* =========================
-   Color System
-========================= */
-
+/* #region Color System */
 :root {
   --background: #ffffff;
   --surface: #f8fafc;
@@ -19,25 +16,24 @@
   --red: #ff1f1fea;
 }
 
+/* #endregion */
 
-/* =========================
-   General
-========================= */
+/* #region General */
 
 main {
   padding-top: 8rem;
 }
 
+/* #endregion */
 
-/* =========================
-   Navbar
-========================= */
+/* #region Navbar */
 
 .navbar {
   position: fixed;
   top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
+
   z-index: 1000;
 
   width: min(90%, 1100px);
@@ -46,9 +42,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 2rem;
 
   background: rgba(255, 255, 255, 0.9);
+
   border: 1px solid var(--border);
   border-radius: 999px;
 
@@ -58,17 +56,19 @@ main {
 }
 
 .navbar .logo {
-  color: var(--text-h);
+  color: var(--text);
+
   padding-left: 1rem;
+
   font-weight: 600;
   font-size: 1rem;
+
   white-space: nowrap;
   text-decoration: none;
 }
 
 .navbar .logo:hover {
   color: var(--red);
-  text-decoration: none;
 }
 
 .navbar nav {
@@ -79,9 +79,11 @@ main {
 
 .navbar nav a {
   padding: 0.6rem 1rem;
+
   border-radius: 999px;
 
   color: var(--text-secondary);
+
   font-size: 0.9rem;
 
   transition: 0.2s ease;
@@ -102,6 +104,7 @@ main {
 
   font-size: 0.85rem;
   font-weight: 600;
+
   white-space: nowrap;
 
   transition: 0.2s ease;
@@ -112,10 +115,9 @@ main {
   transform: translateY(-1px);
 }
 
+/* #endregion */
 
-/* =========================
-   Projects Overview
-========================= */
+/* #region Projects Overview */
 
 .projects-page {
   padding: 8% 6%;
@@ -125,7 +127,7 @@ main {
   padding-top: 4rem;
 
   max-width: 700px;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 5rem;
 
   text-align: center;
 }
@@ -144,14 +146,15 @@ main {
   font-size: 1.2rem;
 }
 
+/* #endregion */
 
-/* =========================
-   Project Cards
-========================= */
+/* #region Project Cards */
 
 .projects-grid {
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   gap: 2rem;
 }
 
@@ -161,6 +164,7 @@ main {
   background: #ffffff;
 
   border-radius: 14px;
+
   overflow: hidden;
 
   box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
@@ -176,9 +180,6 @@ main {
   box-shadow:
     0 18px 40px rgba(15, 23, 42, 0.1);
 }
-
-
-/* Project card image */
 
 .project-image {
   height: 266px;
@@ -200,9 +201,6 @@ main {
 
   display: block;
 }
-
-
-/* Project information */
 
 .project-info {
   padding: 2rem;
@@ -231,18 +229,18 @@ main {
   line-height: 1.7;
 }
 
-
-/* Project tags */
-
 .project-tags {
   display: flex;
-  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  margin: 1.5rem 0;
+  gap: 0.6rem;
+
+  margin-top: 2rem;
 }
 
 .project-tags span {
-  padding: 0.4rem 0.7rem;
+  padding: 0.5rem 0.9rem;
 
   border: 1px solid #bfdbfe;
 
@@ -251,11 +249,8 @@ main {
 
   border-radius: 999px;
 
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
-
-
-/* Project link */
 
 .project-link {
   display: inline-block;
@@ -273,26 +268,26 @@ main {
   color: var(--blue-dark);
 }
 
+/* #endregion */
 
-/* =========================
-   Individual Project Pages
-========================= */
-
+/* #region Individual Project Page */
 
 .project-page {
-  padding: 8% 6%;
   max-width: 1400px;
-  padding-top: 8rem;
+
   margin: 0 auto;
+
+  padding: 8rem 6% 5rem;
 }
 
+/* #endregion */
 
-/* Project title */
+/* #region Project Hero */
 
 .project-hero {
   max-width: 900px;
 
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 5rem;
 
   text-align: center;
 }
@@ -303,74 +298,50 @@ main {
   font-size: clamp(3.5rem, 8vw, 8rem);
 
   line-height: 0.95;
-
   letter-spacing: -0.05em;
 
   margin-bottom: 2rem;
 }
 
-
-/* Project rank */
-
 .project-rank {
   color: var(--blue);
 
-  font-size: 1.5rem;
-
+  font-size: 1.4rem;
   font-weight: 700;
 
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 2rem;
 
   text-align: center;
 }
-
-
-/* Project introduction */
 
 .project-intro {
   max-width: 700px;
 
   color: var(--text-secondary);
 
-  font-size: 1.25rem;
-
+  font-size: 1.2rem;
   line-height: 1.7;
 
-  margin: 0 auto 5rem auto;
+  margin: 0 auto;
 
   text-align: center;
 }
 
+/* #endregion */
 
-/* =========================
-   Project Showcase
-========================= */
+/* #region Project Showcase */
 
 .project-showcase {
-  margin-bottom: 6rem;
-}
-
-.project-placeholder {
   width: 100%;
-  height: 600px;
-  border-radius: 14px;
-  overflow: hidden;
-  background: none;
-  padding: 0;
+
+  margin-bottom: 7rem;
 }
 
-.project-placeholder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 14px;
-}
+/* ImageSlider.css handles the actual slider */
 
-/* =========================
-   Project Details
-========================= */
+/* #endregion */
+
+/* #region Project Details */
 
 .project-details {
   display: grid;
@@ -379,80 +350,221 @@ main {
 
   gap: 6rem;
 
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 7rem;
 
-  text-align: center;
+  text-align: left;
 }
 
 .project-details h2,
-.technical-section h2 {
+.technical-section h2,
+.contributions-section h2 {
   color: var(--text);
 
   font-size: 2.5rem;
+  line-height: 1.1;
 
   margin-bottom: 1.5rem;
 }
 
 .project-details p,
-.project-details li,
 .technical-section p {
   color: var(--text-secondary);
 
   line-height: 1.8;
+
+  margin-bottom: 1.25rem;
 }
 
-.project-details ul {
-  padding-left: 1.2rem;
+/* #endregion */
+
+/* #region Contributions */
+
+.contributions-section {
+  margin-bottom: 7rem;
 }
 
+.contributions-section h2 {
+  margin-bottom: 2.5rem;
+}
 
-/* =========================
-   Technical Section
-========================= */
+.contributions-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1rem;
+}
+
+.contribution-card {
+  padding: 1.5rem;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 14px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.contribution-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #bfdbfe;
+
+  box-shadow:
+    0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.contribution-card h3 {
+  color: var(--text);
+
+  font-size: 1.1rem;
+
+  margin-bottom: 0.7rem;
+}
+
+.contribution-card p {
+  color: var(--text-secondary);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+
+  margin: 0;
+}
+
+/* #endregion */
+
+/* #region Technical Development */
 
 .technical-section {
-  max-width: 800px;
+  max-width: 1000px;
 
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 7rem;
 
   text-align: center;
 }
 
-/* =========================
-   Game Link
-========================= */
+.development-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1rem;
+
+  margin-top: 3rem;
+
+  text-align: left;
+}
+
+.development-item {
+  padding: 1.75rem;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 14px;
+}
+
+.development-item h3 {
+  color: var(--text);
+
+  font-size: 1.2rem;
+
+  margin-bottom: 0.75rem;
+}
+
+.development-item p {
+  color: var(--text-secondary);
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+/* #endregion */
+
+/* #region Technologies */
+
+.technical-section .project-tags {
+  margin-top: 2rem;
+}
+
+/* #endregion */
+
+/* #region Result */
+
+.technical-section .project-rank {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+/* #endregion */
+
+/* #region Game Link */
+
 .project-links {
   display: flex;
+
   flex-direction: column;
   align-items: center;
+
   text-align: center;
+
   gap: 1rem;
+
   margin-top: 2rem;
-  padding-bottom: 5rem;
+
+  padding-bottom: 4rem;
 }
 
 .project-button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--blue);
+
+  padding: 0.8rem 1.5rem;
+
+  background: var(--blue);
   color: #ffffff;
+
   text-decoration: none;
+
   font-weight: 600;
+
   border-radius: 8px;
-  transition: background-color 0.2s ease;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .project-button:hover {
-  background-color: var(--blue-dark);
+  background: var(--blue-dark);
+
+  transform: translateY(-2px);
 }
-/* =========================
-   Back Link
-========================= */
+
+/* #endregion */
+
+/* #region Back Link */
 
 .back-link {
+  display: block;
+
+  width: fit-content;
+
+  margin: 0 auto;
+
   color: var(--blue);
+
   font-weight: 600;
+
   text-decoration: none;
+
   transition: 0.2s ease;
 }
 
@@ -460,10 +572,21 @@ main {
   color: var(--blue-dark);
 }
 
+/* #endregion */
 
-/* =========================
-   Mobile
-========================= */
+/* #region Tablet */
+
+@media (max-width: 1100px) {
+
+  .contributions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* #endregion */
+
+/* #region Mobile */
 
 @media (max-width: 768px) {
 
@@ -475,21 +598,70 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .project-page {
+    padding: 7rem 5% 4rem;
+  }
+
+  .project-hero {
+    margin-bottom: 4rem;
+  }
+
+  .project-hero h1 {
+    font-size: clamp(3rem, 14vw, 5rem);
+  }
+
+  .project-rank {
+    font-size: 1.2rem;
+  }
+
+  .project-intro {
+    font-size: 1.05rem;
+  }
+
+  .project-showcase {
+    margin-bottom: 5rem;
+  }
+
   .project-details {
     grid-template-columns: 1fr;
 
     gap: 3rem;
+
+    margin-bottom: 5rem;
   }
 
-  .project-placeholder {
-    min-height: 300px;
+  .project-details h2,
+  .technical-section h2,
+  .contributions-section h2 {
+    font-size: 2rem;
   }
 
-  .project-placeholder img {
-    max-height: 400px;
+  .contributions-section {
+    margin-bottom: 5rem;
   }
 
-  .project-image {
-    height: 250px;
+  .contributions-grid {
+    grid-template-columns: 1fr;
   }
+
+  .technical-section {
+    margin-bottom: 5rem;
+  }
+
+  .development-grid {
+    grid-template-columns: 1fr;
+
+    margin-top: 2rem;
+  }
+
+  .development-item {
+    padding: 1.4rem;
+  }
+
+  .project-links {
+    padding-bottom: 3rem;
+  }
+
 }
+
+/* #endregion */

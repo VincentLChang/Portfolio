@@ -15,6 +15,11 @@ const windInYourBackImages = [
 function WindInYourBack() {
   return (
     <div className="portfolio">
+
+      {/* =========================
+          Navbar
+      ========================= */}
+
       <header className="navbar">
         <Link to="/" className="logo">
           Vincent Chang
@@ -33,103 +38,349 @@ function WindInYourBack() {
         </a>
       </header>
 
+
       <main className="project-page">
 
+        {/* =========================
+            Project Hero
+        ========================= */}
+
         <section className="project-hero">
+
           <p className="hero-label">
             JUNIPER DEV GAMEJAM 2026
           </p>
 
-          <h1>Wind in Your Back</h1>
+          <h1>
+            Wind in Your Back
+          </h1>
 
           <p className="project-rank">
-            🏆 Rank #15
+            🏆 #15 of 3,503 submissions
           </p>
 
           <p className="project-intro">
-            A game created during the Juniper Dev GameJam 2026,
-            where I worked on enemy logic, player bounce mechanics,
-            and narrative design.
+            A fast-paced 3D platformer created during the Juniper
+            Dev GameJam 2026. I worked on gameplay systems, enemy
+            logic, player mechanics, and narrative design.
           </p>
+
         </section>
 
+
+        {/* =========================
+            Project Image Slider
+        ========================= */}
+
         <section className="project-showcase">
+
           <ImageSlider images={windInYourBackImages} />
+
         </section>
+
+
+        {/* =========================
+            About The Game
+        ========================= */}
 
         <section className="project-details">
 
           <div>
-            <p className="hero-label">OVERVIEW</p>
 
-            <h2>About the Game</h2>
+            <p className="hero-label">
+              OVERVIEW
+            </p>
+
+            <h2>
+              About the Game
+            </h2>
 
             <p>
-              Wind in Your Back is a game created during the Juniper
-              Dev GameJam 2026. The game is a fast-paced 3D platformer
-              where the player must navigate through the levels as
-              quickly as possible.
+              Wind in Your Back is a fast-paced 3D platformer created
+              for the Juniper Dev GameJam 2026. You play as a faulty
+              wind-up toy trying to escape a factory that wants to
+              destroy you.
             </p>
 
             <p>
-              The player is a faulty wind-up toy which the factory is
-              trying to destroy, forcing you to escape. The player must
-              use their winding key to move forward while avoiding
-              obstacles and enemies.
+              Use your winding key to move through the levels as
+              quickly as possible while avoiding obstacles and
+              enemies.
             </p>
 
-            <p>
-              The project was created in Unity with C# and was
-              completed in a week. The game was ranked 15th out of
-              3,503 submissions, which was a great achievement for a
-              game jam project.
-            </p>
           </div>
+
 
           <div>
-            <p className="hero-label">MY CONTRIBUTIONS</p>
 
-            <h2>What I Worked On</h2>
+            <p className="hero-label">
+              GAMEPLAY
+            </p>
 
-            <ul>
-              <li>Narrative design</li>
-              <li>Game design</li>
-              <li>Story writing</li>
-              <li>Sound design</li>
-              <li>UI</li>
-              <li>Enemy logic</li>
-              <li>Player charge effects</li>
-              <li>Player bounce mechanics</li>
-              <li>Bug fixing</li>
-            </ul>
+            <h2>
+              The Goal
+            </h2>
+
+            <p>
+              The focus of the game is speed and movement. Players
+              must carefully manage their movement and use the
+              environment to make it through each level as quickly
+              as possible.
+            </p>
+
+            <p>
+              The game combines platforming, hazards, enemies, and
+              movement mechanics around the central wind-up toy
+              concept.
+            </p>
+
           </div>
 
         </section>
 
-        <section className="technical-section">
 
-          <p className="hero-label">DEVELOPMENT</p>
+        {/* =========================
+            My Contributions
+        ========================= */}
 
-          <h2>Technical Development</h2>
+        <section className="contributions-section">
 
-          <p>
-            This section will explain how you implemented the
-            mechanics and systems you worked on.
+          <p className="hero-label">
+            MY CONTRIBUTIONS
           </p>
+
+          <h2>
+            What I Worked On
+          </h2>
+
+          <div className="contributions-grid">
+
+            <article className="contribution-card">
+              <h3>
+                Gameplay Systems
+              </h3>
+
+              <p>
+                Player bounce mechanics, charge effects, and other
+                gameplay systems.
+              </p>
+            </article>
+
+
+            <article className="contribution-card">
+              <h3>
+                Enemy Logic
+              </h3>
+
+              <p>
+                Implemented and worked on enemy behaviour and logic
+                used during gameplay.
+              </p>
+            </article>
+
+
+            <article className="contribution-card">
+              <h3>
+                Lance Logic
+              </h3>
+
+              <p>
+                Worked on the lance system and its interaction with
+                the player's gameplay mechanics.
+              </p>
+            </article>
+
+
+            <article className="contribution-card">
+              <h3>
+                Game Design
+              </h3>
+
+              <p>
+                Helped brainstorm and develop the core game concept
+                around the "Spin to Win" theme.
+              </p>
+            </article>
+
+
+            <article className="contribution-card">
+              <h3>
+                Narrative
+              </h3>
+
+              <p>
+                Worked on the game's narrative design and story
+                writing.
+              </p>
+            </article>
+
+
+            <article className="contribution-card">
+              <h3>
+                UI & Audio
+              </h3>
+
+              <p>
+                Helped with UI implementation and sound design
+                throughout development.
+              </p>
+            </article>
+
+
+            <article className="contribution-card">
+              <h3>
+                Project Architecture
+              </h3>
+
+              <p>
+                Helped with the initial project setup and architecture
+                to keep the code modular and scalable.
+              </p>
+            </article>
+
+
+            <article className="contribution-card">
+              <h3>
+                Bug Fixing
+              </h3>
+
+              <p>
+                Helped identify, troubleshoot, and fix issues during
+                development and testing.
+              </p>
+            </article>
+
+          </div>
 
         </section>
 
+
+        {/* =========================
+            Technical Development
+        ========================= */}
+
         <section className="technical-section">
 
-          <p className="hero-label">RESULT</p>
+          <p className="hero-label">
+            DEVELOPMENT
+          </p>
 
-          <h2>Juniper Dev GameJam 2026</h2>
+          <h2>
+            Technical Development
+          </h2>
+
+          <div className="development-grid">
+
+            <article className="development-item">
+
+              <h3>
+                Game Concept
+              </h3>
+
+              <p>
+                We explored several ideas around the "Spin to Win"
+                theme before deciding on a wind-up toy trying to
+                escape a factory.
+              </p>
+
+            </article>
+
+
+            <article className="development-item">
+
+              <h3>
+                Project Architecture
+              </h3>
+
+              <p>
+                I helped with the initial project setup and
+                architecture, focusing on keeping the systems
+                modular and scalable.
+              </p>
+
+            </article>
+
+
+            <article className="development-item">
+
+              <h3>
+                Gameplay Systems
+              </h3>
+
+              <p>
+                I worked on the lance logic, enemy logic, player
+                charge effects, and player bounce mechanics.
+              </p>
+
+            </article>
+
+
+            <article className="development-item">
+
+              <h3>
+                Code & Debugging
+              </h3>
+
+              <p>
+                I worked with interfaces and existing systems to
+                extend functionality and helped identify and fix
+                bugs throughout development.
+              </p>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================
+            Technologies
+        ========================= */}
+
+        <section className="technical-section">
+
+          <p className="hero-label">
+            TECHNOLOGIES
+          </p>
+
+          <h2>
+            Tools
+          </h2>
+
+          <div className="project-tags">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Git</span>
+          </div>
+
+        </section>
+
+
+        {/* =========================
+            Result
+        ========================= */}
+
+        <section className="technical-section">
+
+          <p className="hero-label">
+            RESULT
+          </p>
+
+          <h2>
+            Juniper Dev GameJam 2026
+          </h2>
 
           <p className="project-rank">
-            🏆 Overall Rank #15 · Score 4.34
+            🏆 #15 of 3,503 submissions · Score 4.34
           </p>
 
         </section>
+
+
+        {/* =========================
+            Game Link
+        ========================= */}
 
         <section className="project-links">
 
@@ -148,11 +399,17 @@ function WindInYourBack() {
 
         </section>
 
+
+        {/* =========================
+            Back To Projects
+        ========================= */}
+
         <Link to="/projects" className="back-link">
           ← Back to Projects
         </Link>
 
       </main>
+
     </div>
   )
 }
