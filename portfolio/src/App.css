@@ -853,6 +853,7 @@ main {
 }
 
 .work-card p {
+  color: var(--blue);
   margin: 1.25rem 0 0;
   line-height: 1.6;
 }
