@@ -36,7 +36,7 @@ function Projects() {
 
         <section className="projects-grid">
 
-          <article className="project-card">
+          <Link to="/projects/wind-in-your-back" className="project-card">
             <div className="project-image">
                 <img
                 src={windInYourBackImage}
@@ -60,17 +60,14 @@ function Projects() {
                 <span>C#</span>
               </div>
 
-              <Link
-                to="/projects/wind-in-your-back"
-                className="project-link"
-              >
+              <span className="project-link">
                 View Project →
-              </Link>
+              </span>
             </div>
-          </article>
+          </Link>
 
 
-          <article className="project-card">
+          <Link to="/projects/tickle-time" className="project-card">
             <div className="project-image">
               <img
                 src={tickleTimeImage}
@@ -94,14 +91,11 @@ function Projects() {
                 <span>C#</span>
               </div>
 
-              <Link
-                to="/projects/tickle-time"
-                className="project-link"
-              >
+              <span className="project-link">
                 View Project →
-              </Link>
+              </span>
             </div>
-          </article>
+          </Link>
 
         </section>
       </main>
