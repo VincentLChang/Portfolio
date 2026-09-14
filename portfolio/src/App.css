@@ -1029,10 +1029,13 @@ main {
   color: var(--blue);
   font-weight: 600;
   text-decoration: none;
+  transition: 0.2s ease;
 }
 
 .contact-email:hover {
   color: var(--blue-dark);
+  transform: translateX(4px);
+  transition: 0.2s ease;
 }
 
 .contact-phone {
@@ -1041,10 +1044,13 @@ main {
   color: var(--blue);
   font-weight: 600;
   text-decoration: none;
+  transition: 0.2s ease;
 }
 
 .contact-phone:hover {
   color: var(--blue-dark);
+  transform: translateX(4px);
+  transition: 0.2s ease;
 }
 
 /* Social links */

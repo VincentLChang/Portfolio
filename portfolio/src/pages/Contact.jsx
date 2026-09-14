@@ -77,7 +77,7 @@ function Contact() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    GitHub →
+                                    GitHub
                                 </a>
 
                                 <a
@@ -85,7 +85,7 @@ function Contact() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    LinkedIn →
+                                    LinkedIn
                                 </a>
 
                                 <a
@@ -93,7 +93,7 @@ function Contact() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    Itch.io →
+                                    Itch.io
                                 </a>
                             </div>
                         </div>
