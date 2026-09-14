@@ -1,41 +1,24 @@
 import { Link } from 'react-router-dom'
 import { useForm } from '@formspree/react'
+import './Contact.css'
+import Navbar from '../components/Navbar'
+import PageHeader from '../components/PageHeader'
 
 function Contact() {
 
     const [state, handleSubmit] = useForm('mppzgnno')
     return (
         <div className="portfolio">
-            <header className="navbar">
-                <Link to="/" className="logo">
-                    Vincent Chang
-                </Link>
+            <Navbar />
 
-                <nav>
-                    <Link to="/">Home</Link>
-                    <a href="/#about">About</a>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/skills">Skills</Link>
-                    <Link to="/contact">Contact</Link>
-                </nav>
+            <main className="page">
 
-                <a href="/CV.pdf" className="cv-button">
-                    Download CV
-                </a>
-            </header>
-
-            <main className="contact-page">
-
-                <section className="contact-header">
-                    <p className="hero-label">MY CONTACT</p>
-
-                    <h1>Let's Work Together</h1>
-
-                    <p>
-                        Have a project, game, or idea in mind? Feel free to get in touch.
-                        I'd be happy to connect and discuss how we can work together.
-                    </p>
-                </section>
+                <PageHeader
+                    className="header"
+                    label="MY CONTACT"
+                    title="Let's Work Together"
+                    description="Have a project, game, or idea in mind? Feel free to get in touch. I'd be happy to connect and discuss how we can work together."
+                />
 
                 <section className="contact-content">
 

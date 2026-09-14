@@ -1,0 +1,222 @@
+.project-showcase {
+    width: 100%;
+    margin-bottom: 7rem;
+
+}
+
+
+.project-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 6rem;
+
+    margin: 0 auto 7rem;
+
+    text-align: left;
+}
+
+.project-details h2,
+.technical-section h2,
+.contributions-section h2 {
+
+    color: var(--text);
+
+    font-size: 2.5rem;
+    line-height: 1.1;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.project-details p,
+.technical-section p {
+
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+
+    margin-bottom: 1.25rem;
+}
+
+
+/* Contributions */
+
+.contributions-section {
+    margin-bottom: 7rem;
+    color: var(--text-secondary);
+}
+
+.contributions-section h2 {
+    margin-bottom: 2.5rem;
+
+}
+
+.contributions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1rem;
+}
+
+.contribution-card {
+    padding: 1.5rem;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.contribution-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.contribution-card h3 {
+    color: var(--text);
+
+    font-size: 1.1rem;
+
+    margin-bottom: 0.7rem;
+}
+
+.contribution-card p {
+    color: var(--text-secondary);
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* Technical */
+
+.technical-section {
+    max-width: 1000px;
+
+    margin: 0 auto 7rem;
+
+    text-align: center;
+}
+
+.development-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+
+    margin-top: 3rem;
+
+    text-align: left;
+}
+
+.development-item {
+    padding: 1.75rem;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.development-item h3 {
+    color: var(--text);
+
+    font-size: 1.2rem;
+
+    margin-bottom: 0.75rem;
+}
+
+.development-item p {
+    color: var(--text-secondary);
+
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+.technical-section .project-tags {
+    margin-top: 2rem;
+}
+
+.technical-section .project-rank {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+
+/* Project Links */
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+
+    padding-bottom: 4rem;
+}
+
+.project-button {
+    display: inline-block;
+
+    padding: 0.8rem 1.5rem;
+
+    background: var(--blue);
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    border-radius: 8px;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.project-button:hover {
+    background: var(--blue-dark);
+
+    transform: translateY(-2px);
+}
+
+.back-link {
+    display: block;
+
+    width: fit-content;
+
+    margin: 0 auto;
+
+    color: var(--blue);
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.back-link:hover {
+    color: var(--blue-dark);
+}
+
+/* #endregion */

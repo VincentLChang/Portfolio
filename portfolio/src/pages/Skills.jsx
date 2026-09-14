@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import './Skills.css'
+import Navbar from '../components/Navbar'
+import PageHeader from '../components/PageHeader'
 
 function Skills() {
 
@@ -103,35 +105,15 @@ function Skills() {
 
     return (
         <div className="portfolio">
-            <header className="navbar">
-                <Link to="/" className="logo">
-                    Vincent Chang
-                </Link>
+            <Navbar />
 
-                <nav>
-                    <Link to="/">Home</Link>
-                    <a href="/#about">About</a>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/skills">Skills</Link>
-                    <Link to="/contact">Contact</Link>
-                </nav>
-
-                <a href="/CV.pdf" className="cv-button">
-                    Download CV
-                </a>
-            </header>
-
-            <main className="skills-page">
-                <section className="skills-header">
-                    <p className="hero-label">WHAT I USE</p>
-
-                    <h1>Skills</h1>
-
-                    <p>
-                        The technologies, tools, and skills I use to create
-                        games, websites, and interactive experiences.
-                    </p>
-                </section>
+            <main className="page">
+                <PageHeader
+                    className="header"
+                    label="WHAT I USE"
+                    title="Skills"
+                    description="The technologies, tools, and skills I use to create games, websites, and interactive experiences."
+                />
 
                 <section className="skills-grid">
                     {skillGroups.map((group) => (

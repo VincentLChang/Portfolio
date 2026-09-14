@@ -1,38 +1,22 @@
 import { Link } from 'react-router-dom'
+import './Projects.css'
+import Navbar from '../components/Navbar'
+import PageHeader from '../components/PageHeader'
 import windInYourBackImage from '../assets/Wind-In-Your-Back/wind-in-your-back.png'
 import tickleTimeImage from '../assets/Tickle-Time/tickle-time.png'
 
 function Projects() {
   return (
     <div className="portfolio">
-      <header className="navbar">
-        <Link to="/" className="logo">
-          Vincent Chang
-        </Link>
+      <Navbar />
 
-        <nav>
-          <Link to="/">Home</Link>  
-          <a href="/#about">About</a>
-          <Link to="/projects">Projects</Link>
-          <Link to="/skills">Skills</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-
-        <a href="/CV.pdf" className="cv-button">
-          Download CV
-        </a>
-      </header>
-
-      <main className="projects-page">
-        <section className="projects-header">
-          <p className="hero-label">MY WORK</p>
-
-          <h1>Projects</h1>
-
-          <p>
-            A selection of games and interactive projects I've worked on.
-          </p>
-        </section>
+      <main className="page">
+        <PageHeader
+          className="header"
+          label="MY WORK"
+          title="Projects"
+          description="A selection of games and interactive projects I've worked on."
+        />
 
         <section className="projects-grid">
 

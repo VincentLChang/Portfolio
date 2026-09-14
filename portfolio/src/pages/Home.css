@@ -1,0 +1,34 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 8rem 6% 5rem;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero-description {
+  max-width: 650px;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 7rem 6% 4rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

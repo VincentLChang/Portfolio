@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
+import './Project.css'
+import Navbar from '../components/Navbar'
 
 import windInYourBackImage from '../assets/Wind-In-Your-Back/wind-in-your-back.png'
 import windInYourBackGameplay from '../assets/Wind-In-Your-Back/wind-in-your-back-game.png'
 import windInYourBackGIF from '../assets/Wind-In-Your-Back/wind-in-your-back.gif'
 
 import ImageSlider from '../components/ImageSlider'
+import PageHeader from '../components/PageHeader'
 
 const windInYourBackImages = [
   windInYourBackImage,
@@ -16,56 +19,23 @@ function WindInYourBack() {
   return (
     <div className="portfolio">
 
-      {/* =========================
-          Navbar
-      ========================= */}
-
-      <header className="navbar">
-        <Link to="/" className="logo">
-          Vincent Chang
-        </Link>
-
-        <nav>
-          <Link to="/">Home</Link>
-          <a href="/#about">About</a>
-          <Link to="/projects">Projects</Link>
-          <Link to="/skills">Skills</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
-
-        <a href="/CV.pdf" className="cv-button">
-          Download CV
-        </a>
-      </header>
+      <Navbar />
 
 
-      <main className="project-page">
+      <main className="page">
 
         {/* =========================
             Project Hero
         ========================= */}
 
-        <section className="project-hero">
-
-          <p className="hero-label">
-            JUNIPER DEV GAMEJAM 2026
-          </p>
-
-          <h1>
-            Wind in Your Back
-          </h1>
-
-          <p className="project-rank">
-            🏆 #15 of 3,503 submissions
-          </p>
-
-          <p className="project-intro">
-            A fast-paced 3D platformer created during the Juniper
-            Dev GameJam 2026. I worked on gameplay systems, enemy
-            logic, player mechanics, and narrative design.
-          </p>
-
-        </section>
+        <PageHeader
+          className="project-hero"
+          label="JUNIPER DEV GAMEJAM 2026"
+          title="Wind in Your Back"
+          afterTitle={<p className="project-rank">🏆 #15 of 3,503 submissions</p>}
+          description="A fast-paced 3D platformer created during the Juniper Dev GameJam 2026. I worked on gameplay systems, enemy logic, player mechanics, and narrative design."
+          descriptionClassName="project-intro"
+        />
 
 
         {/* =========================

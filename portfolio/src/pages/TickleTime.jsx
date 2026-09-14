@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import PageHeader from '../components/PageHeader'
+import './Projects.css'
 
 import tickleTimeImage from '../assets/Tickle-Time/tickle-time.png'
 import tickleTimeImage1 from '../assets/Tickle-Time/tickle-time1.png'
@@ -20,7 +22,7 @@ function TickleTime() {
 
         <nav>
           <Link to="/">Home</Link>
-          <a href="/#about">About</a>
+          <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/skills">Skills</Link>
           <a href="/#contact">Contact</a>
@@ -29,21 +31,14 @@ function TickleTime() {
         <a href="/CV.pdf" className="cv-button">Download CV</a>
       </header>
 
-      <main className="project-page">
+      <main className="page">
 
         {/* PROJECT HERO */}
-        <section className="project-hero">
-          <p className="hero-label">GLOBAL GAME JAM 2024</p>
-
-          <h1>Tickle Time</h1>
-
-          <p className="project-intro">
-            A multiplayer game created during Global Game Jam 2024.
-            I worked on gameplay systems, item logic, 2D art, game
-            concept, and level design.
-          </p>
-        </section>
-
+        <PageHeader
+          label="GLOBAL GAME JAM 2024"
+          title="Tickle Time"
+          description="A multiplayer game created during Global Game Jam 2024. I worked on gameplay systems, item logic, 2D art, game concept, and level design."
+        />
 
         {/* IMAGE SLIDER */}
         <section className="project-showcase">
