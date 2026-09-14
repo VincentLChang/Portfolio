@@ -13,7 +13,7 @@ function Home() {
           <a href="#about">About</a>
           <a href="/projects">Projects</a>
           <a href="/skills">Skills</a>
-          <a href="#contact">Contact</a>
+          <a href="/contact">Contact</a>
         </nav>
 
         <a href="/CV.pdf" className="cv-button">

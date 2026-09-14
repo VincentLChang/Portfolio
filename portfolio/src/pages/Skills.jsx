@@ -113,7 +113,7 @@ function Skills() {
                     <a href="/#about">About</a>
                     <Link to="/projects">Projects</Link>
                     <Link to="/skills">Skills</Link>
-                    <a href="/#contact">Contact</a>
+                    <Link to="/contact">Contact</Link>
                 </nav>
 
                 <a href="/CV.pdf" className="cv-button">

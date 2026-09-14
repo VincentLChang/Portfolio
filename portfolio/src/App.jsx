@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import WindInYourBack from './pages/WindInYourBack'
 import TickleTime from './pages/TickleTime.jsx'
 import Skills from './pages/Skills'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
         <Route
           path="/skills"
           element={<Skills />}
+        />
+        <Route
+          path="/contact"
+          element={<Contact />}
         />
       </Routes>
     </BrowserRouter>
