@@ -1067,6 +1067,24 @@ main {
   transform: translateX(4px);
 }
 
+.contact-success {
+  color: var(--blue);
+  line-height: 1.7;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-error {
+  color: var(--red);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.contact-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
 
 /* Form */
 
