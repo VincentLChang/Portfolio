@@ -54,16 +54,9 @@ function WindInYourBack() {
         ========================= */}
 
         <section className="project-details">
-
-          <div>
-
-            <p className="hero-label">
-              OVERVIEW
-            </p>
-
-            <h2>
-              About the Game
-            </h2>
+          <div className="project-detail-card">
+            <p className="project-label">OVERVIEW</p>
+            <h2>About the Game</h2>
 
             <p>
               Wind in Your Back is a fast-paced 3D platformer created
@@ -71,39 +64,27 @@ function WindInYourBack() {
               wind-up toy trying to escape a factory that wants to
               destroy you.
             </p>
-
             <p>
               Use your winding key to move through the levels as
               quickly as possible while avoiding obstacles and
               enemies.
             </p>
-
           </div>
-
-
-          <div>
-
-            <p className="hero-label">
-              GAMEPLAY
-            </p>
-
-            <h2>
-              The Goal
-            </h2>
-
+          
+          <div className="project-detail-card">
+            <p className="project-label">GAMEPLAY</p>
+            <h2>The Goal</h2>
             <p>
               The focus of the game is speed and movement. Players
               must carefully manage their movement and use the
               environment to make it through each level as quickly
               as possible.
             </p>
-
             <p>
               The game combines platforming, hazards, enemies, and
               movement mechanics around the central wind-up toy
               concept.
             </p>
-
           </div>
 
         </section>

@@ -48,9 +48,8 @@ function TickleTime() {
 
         {/* PROJECT DETAILS */}
         <section className="project-details">
-
-          <div>
-            <p className="hero-label">OVERVIEW</p>
+          <div className="project-detail-card">
+             <p className="project-label"> OVERVIEW </p>
 
             <h2>About the Game</h2>
 
@@ -69,8 +68,8 @@ function TickleTime() {
           </div>
 
 
-          <div>
-            <p className="hero-label">GAMEPLAY</p>
+          <div className="project-detail-card">
+            <p className="project-label">GAMEPLAY</p>
 
             <h2>The Goal</h2>
 
@@ -95,7 +94,6 @@ function TickleTime() {
           </div>
 
         </section>
-
 
         {/* CONTRIBUTIONS */}
         <section className="contributions-section">

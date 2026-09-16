@@ -1,5 +1,3 @@
-import './PageHeader.css'
-
 function PageHeader({
   className = '',
   label,

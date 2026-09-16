@@ -134,7 +134,7 @@
 }
 
 .work-card {
-  height: 350px;
+  height: 385px;
   box-sizing: border-box;
 
   display: flex;
@@ -288,3 +288,9 @@
   }
 }
 /* #endregion */
+
+
+.additional-skills .skill-card {
+    margin-top: 2rem;
+    grid-column: 1 / -1;
+}

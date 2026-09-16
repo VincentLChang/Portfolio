@@ -16,7 +16,7 @@ function About() {
                     className="header"
                     label="ABOUT ME"
                     title="About Me"
-                    description="I'm a developer interested in creating games, applications, and interactive experiences."
+                    description="A little about who I am, my background, and what motivates me as a developer."
                 />
 
 
@@ -33,17 +33,29 @@ function About() {
                         <h2>Hi, I'm Vincent.</h2>
 
                         <p>
-                            I'm a developer who enjoys building interactive
-                            experiences and solving technical problems.
+                            I'm a Junior Software Developer and HBO-ICT
+                            graduate based in Amsterdam. I enjoy building
+                            software and working on projects where I can
+                            combine creativity, technology, and problem
+                            solving.
                         </p>
 
                         <p>
-                            I enjoy working on projects where I can combine
-                            creativity and technology, while continuously
-                            learning and improving my skills.
+                            Throughout my studies and professional experience,
+                            I've had the opportunity to work on different
+                            types of projects, from educational platforms
+                            and backend systems to games and interactive
+                            experiences.
+                        </p>
+
+                        <p>
+                            I enjoy learning through practical projects and
+                            challenging myself to understand how things work
+                            and how they can be improved.
                         </p>
 
                     </div>
+
 
                     <div className="about-card about-interests-card">
 
@@ -54,10 +66,11 @@ function About() {
                         <h2>What I Enjoy</h2>
 
                         <ul className="about-interests">
+                            <li>Building Software</li>
                             <li>Game Development</li>
-                            <li>Web Development</li>
                             <li>Interactive Experiences</li>
-                            <li>Problem Solving</li>
+                            <li>Learning New Technologies</li>
+                            <li>Solving Technical Problems</li>
                         </ul>
 
                     </div>
@@ -78,34 +91,43 @@ function About() {
                         <h2>My Education</h2>
 
                         <p>
-                            My educational background and the knowledge
-                            I've developed along the way.
+                            My academic background and the foundation of my
+                            development journey.
                         </p>
 
                     </div>
+
 
                     <div className="education-list">
 
                         <article className="education-card">
 
                             <div className="education-year">
-                                202X — Present
+                                Sep 21 — Jul 26
                             </div>
 
                             <div className="education-info">
 
                                 <h3>
-                                    Your Current Education
+                                    HBO-ICT — Bachelor of Science
                                 </h3>
 
                                 <p className="education-school">
-                                    Your School / University
+                                    Amsterdam University of Applied Sciences
                                 </p>
 
                                 <p>
-                                    Add a short description of your study,
-                                    specialization, or the subjects you're
-                                    focusing on.
+                                    I studied Information and Communication
+                                    Technology, developing a broad foundation
+                                    in software development, project work,
+                                    and IT.
+                                </p>
+
+                                <p>
+                                    My bachelor thesis focused on evaluating
+                                    and designing an optimal backend
+                                    architecture for the deTechHelden
+                                    learning platform.
                                 </p>
 
                             </div>
@@ -116,27 +138,50 @@ function About() {
                         <article className="education-card">
 
                             <div className="education-year">
-                                202X — 202X
+                                Sep 17 — Jul 21
                             </div>
 
                             <div className="education-info">
 
                                 <h3>
-                                    Previous Education
+                                    HAVO — Natuur en Techniek
                                 </h3>
 
                                 <p className="education-school">
-                                    Your School
+                                    DENISE, Amsterdam
                                 </p>
 
                                 <p>
-                                    Add a short description of your previous
-                                    education or relevant achievements.
+                                    Completed HAVO with a focus on the
+                                    Natuur en Techniek profile.
                                 </p>
 
                             </div>
 
                         </article>
+
+                    </div>
+
+                </section>
+
+
+                {/* Languages */}
+
+                <section className="about-languages">
+
+                    <div className="about-card">
+
+                        <p className="about-label">
+                            LANGUAGES
+                        </p>
+
+                        <h2>Languages</h2>
+
+                        <ul className="about-interests">
+                            <li>German — Native</li>
+                            <li>Dutch — C1</li>
+                            <li>English — C1</li>
+                        </ul>
 
                     </div>
 
@@ -156,9 +201,16 @@ function About() {
                         <h2>What I'm Looking For</h2>
 
                         <p>
-                            I'm interested in opportunities where I can
-                            continue developing my skills, contribute to
-                            meaningful projects, and learn from others.
+                            I'm looking for opportunities where I can grow
+                            as a software developer, contribute to meaningful
+                            projects, and continue learning from experienced
+                            developers and teams.
+                        </p>
+
+                        <p>
+                            I'm particularly interested in projects where I
+                            can work on challenging technical problems while
+                            continuing to develop as an engineer.
                         </p>
 
                         <Link
@@ -178,4 +230,3 @@ function About() {
 }
 
 export default About
-
