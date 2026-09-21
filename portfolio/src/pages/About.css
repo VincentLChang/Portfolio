@@ -1,5 +1,6 @@
 /* #region Introduction */
 
+
 .about-introduction {
 
     max-width: 1100px;
@@ -73,7 +74,6 @@
 
 /* #endregion */
 
-
 /* #region Interests */
 
 .about-interests {
@@ -106,6 +106,288 @@
 
 /* #endregion */
 
+/* #region Experience */
+
+.experience-section {
+    max-width: 1100px;
+    margin: 7rem auto 0;
+}
+
+.experience-header {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.experience-header h2 {
+    color: var(--text);
+
+    font-size: 2.5rem;
+    line-height: 1.1;
+
+    margin-bottom: 1rem;
+}
+
+.experience-header > p:last-child {
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.experience-card {
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 2rem;
+
+    padding: 2rem;
+
+    background: #ffffff;
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(15, 23, 42, 0.1);
+}
+
+
+/* Date + Logo */
+
+.experience-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+.experience-date {
+    color: var(--blue);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    padding-top: 0.25rem;
+}
+
+
+/* Logo */
+
+.experience-logo {
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+.experience-logo img {
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* Experience information */
+
+.experience-info h3 {
+    color: var(--text);
+
+    font-size: 1.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.experience-company {
+    color: var(--blue);
+
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+}
+
+.experience-info p {
+    color: var(--text-secondary);
+
+    line-height: 1.7;
+
+    margin-bottom: 1rem;
+}
+
+.experience-info p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .experience-card {
+        grid-template-columns: 1fr;
+
+        gap: 1.5rem;
+    }
+
+    .experience-sidebar {
+        flex-direction: row;
+        align-items: center;
+
+        gap: 1.5rem;
+    }
+
+    .experience-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+
+/* #endregion */
+
+/* #region Experience Story */
+
+.experience-story {
+    margin-top: 1.5rem;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* Story content */
+
+.experience-story-content {
+    position: relative;
+
+    max-height: 180px;
+
+    padding: 1.25rem 1.5rem 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 0.4s ease;
+}
+
+
+/* Paragraphs */
+
+.experience-story-content p {
+    color: var(--text-secondary);
+
+    font-size: 0.95rem;
+    line-height: 1.75;
+
+    margin: 0 0 1rem;
+}
+
+.experience-story-content p:last-child {
+    margin-bottom: 1.25rem;
+}
+
+
+/* Fade when collapsed */
+
+.experience-story-content::after {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 70px;
+
+    background: linear-gradient(
+        transparent,
+        #fafafa
+    );
+
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+}
+
+
+/* Footer */
+
+.experience-story-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    padding: 0.9rem 1.5rem;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--blue);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+/* Arrow */
+
+.experience-story-toggle {
+    font-size: 1rem;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Expanded */
+
+.experience-story.expanded .experience-story-content {
+    max-height: 2000px;
+}
+
+.experience-story.expanded .experience-story-content::after {
+    opacity: 0;
+}
+
+
+/* #endregion */
 
 /* #region Education */
 
@@ -225,7 +507,6 @@
 
 /* #endregion */
 
-
 /* #region Languages */
 
 .about-languages {
@@ -257,8 +538,8 @@
 
 /* #endregion */
 
-
 /* #region Goals */
+
 
 .about-goals {
 
@@ -305,66 +586,5 @@
     transform: translateX(3px);
 }
 
-
-/* #endregion */
-
-
-/* #region Responsive */
-
-@media (max-width: 800px) {
-
-    .about-introduction {
-
-        grid-template-columns: 1fr;
-    }
-
-    .education-card {
-
-        grid-template-columns: 1fr;
-
-        gap: 0.75rem;
-    }
-
-    .education-year {
-
-        padding-top: 0;
-    }
-
-    .education-header h2 {
-
-        font-size: 2.2rem;
-    }
-
-}
-
-@media (max-width: 500px) {
-
-    .about-card,
-    .education-card {
-
-        padding: 1.5rem;
-    }
-
-    .about-card h2 {
-
-        font-size: 1.7rem;
-    }
-
-    .education-header h2 {
-
-        font-size: 2rem;
-    }
-
-    .education-header > p:last-child {
-
-        font-size: 1rem;
-    }
-
-    .about-interests li {
-
-        font-size: 0.85rem;
-    }
-
-}
 
 /* #endregion */

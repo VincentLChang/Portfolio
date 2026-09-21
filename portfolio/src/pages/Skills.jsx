@@ -9,51 +9,40 @@ function Skills() {
         {
             category: 'Backend Development',
             description:
-                'I build backend applications using JavaScript and Node.js, with experience designing serverless and event-driven architectures.',
-            skills: [
-                'JavaScript',
-                'Node.js',
-                'AWS Lambda',
-                'Amazon EventBridge',
-                'AWS SAM',
-                'MongoDB',
-                'SQL'
-            ]
+                'Technologies I use to build backend applications, services, and server-side systems.',
+            skills: ['Node.js', 'JavaScript']
+        },
+        {
+            category: 'DevOps & Cloud',
+            description:
+                'Tools and technologies I use for cloud infrastructure, deployment, and development environments.',
+            skills: ['AWS Lambda', 'Amazon EventBridge', 'AWS SAM', 'Docker']
+        },
+        {
+            category: 'Frontend Development',
+            description:
+                'Technologies I use to build websites, applications, and interactive user interfaces.',
+            skills: [ 'React', 'JSX', 'JavaScript', 'HTML', 'CSS']
         },
         {
             category: 'Game Development',
             description:
-                'I develop gameplay systems and interactive experiences using Unity and C#, with experience debugging and refining existing game functionality.',
-            skills: [
-                'C#',
-                'Unity'
-            ]
+                'Technologies I use to create games, gameplay systems, and interactive experiences.',
+            skills: ['Unity', 'C#']
         },
         {
-            category: 'Web Development',
+            category: 'Databases',
             description:
-                'I create web applications and interfaces using modern web technologies and component-based development.',
-            skills: [
-                'React',
-                'JSX',
-                'JavaScript',
-                'HTML',
-                'CSS'
-            ]
+                'Technologies I use to store, manage, and work with application data.',
+            skills: ['MongoDB', 'SQL', 'MySQL', 'NoSQL']
         },
         {
-            category: 'Tools & Development Practices',
+            category: 'Development Tools & Methods',
             description:
-                'I use development tools and collaborative practices to keep projects organized and support an efficient development workflow.',
-            skills: [
-                'Git',
-                'Docker',
-                'Scrum',
-                'Agile'
-            ]
+                'Tools and practices I use to manage projects, collaborate with teams, and organize development.',
+            skills: ['Git', 'GitHub', 'Visual Studio', 'Visual Studio Code', 'Agile', 'Scrum']
         }
     ]
-
     const workItems = [
         {
             title: 'Problem Solving',
@@ -157,7 +146,7 @@ function Skills() {
                     ))}
 
                 </section>
-{/* Additional Technologies */}
+                {/* Additional Technologies */}
 
                 <section className="skills-grid additional-skills">
 
@@ -316,8 +305,8 @@ function Skills() {
                             <button
                                 key={index}
                                 className={`carousel-dot ${index === currentIndex
-                                        ? 'active'
-                                        : ''
+                                    ? 'active'
+                                    : ''
                                     }`}
                                 onClick={() => setCurrentIndex(index)}
                                 aria-label={`Go to item ${index + 1}`}
